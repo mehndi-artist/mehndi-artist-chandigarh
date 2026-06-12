@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book the finest organic henna artist in Chandigarh. Krishna Mehandi Art offers custom bridal designs, transparent pricing, and home service across Tricity.">
+    <meta name="robots" content="index, follow">
+    <title>Premium Bridal Mehndi Artist in Chandigarh | Krishna Mehandi Art</title>
+    
+    <!-- Google Fonts: Playfair Display for Elegance, Poppins for Clean Readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* === COLOR PALETTE & VARIABLES === */
+        :root {
+            --primary-dark: #0A1C17; /* Deep Forest Green */
+            --accent-gold: #D4AF37; /* Royal Gold */
+            --accent-light-gold: #F3E5AB; /* Soft Gold */
+            --bg-light: #FAF9F6; /* Pearl White */
+            --text-dark: #222222;
+            --text-gray: #555555;
+            --white: #FFFFFF;
+        }
+
+        /* === GLOBAL STYLES === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+
+        a {
+            color: var(--accent-gold);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: capitalize;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-gold);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            background: linear-gradient(rgba(10, 28, 23, 0.85), rgba(10, 28, 23, 0.95)), url('https://images.unsplash.com/photo-1596450514735-11003b145a31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        .hero h1 {
+            color: var(--accent-gold);
+            font-size: 4rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: var(--accent-light-gold);
+        }
+
+        .btn-gold {
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-gold:hover {
+            background-color: var(--white);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        /* === GRID LAYOUTS === */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* === CARDS (Glassmorphism & Luxury Feel) === */
+        .luxury-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-bottom: 4px solid var(--accent-gold);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .luxury-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .luxury-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .price-tag {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            font-weight: 700;
+            margin: 15px 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .price-tag span {
+            font-size: 1rem;
+            color: var(--text-gray);
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* === GUIDELINES SECTION === */
+        .guidelines-bg {
+            background-color: var(--primary-dark);
+            color: var(--white);
+        }
+
+        .guidelines-bg h2, .guidelines-bg h3 {
+            color: var(--accent-gold);
+        }
+
+        .guidelines-bg .section-title::after {
+            background-color: var(--white);
+        }
+
+        .icon-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .icon-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        .icon-list li i {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+        }
+
+        /* === ACCORDION FAQs === */
+        .faq-wrapper {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        details {
+            background: var(--white);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            overflow: hidden;
+            border-left: 3px solid var(--accent-gold);
+        }
+
+        summary {
+            padding: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            transition: 0.3s;
+        }
+
+        details[open] summary::after {
+            content: '-';
+        }
+
+        .faq-content {
+            padding: 0 20px 20px;
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* === LOCATIONS & LINKS (Helpful Content Area) === */
+        .locations-box {
+            background: #fdfdfd;
+            border: 1px solid #eaeaea;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .locations-box ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .locations-box ul li {
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .locations-box ul li i {
+            color: var(--primary-dark);
+            margin-right: 10px;
+        }
+
+        .locations-box a {
+            font-weight: 500;
+            border-bottom: 1px dashed var(--accent-gold);
+        }
+
+        /* === FLOATING ICONS === */
+        .floating-action {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .float-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 28px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .whatsapp-icon {
+            background: #25D366;
+            animation: pulse-green 2s infinite;
+        }
+
+        .call-icon {
+            background: var(--primary-dark);
+            border: 2px solid var(--accent-gold);
+        }
+
+        .float-icon:hover {
+            transform: scale(1.1);
+            color: var(--white);
+        }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* === FOOTER === */
+        footer {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 60px 20px 20px;
+            text-align: center;
+        }
+
+        footer h2 {
+            color: var(--accent-gold);
+        }
+
+        .footer-credit {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        .footer-credit a {
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* === RESPONSIVE DESIGN === */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.8rem; }
+            .grid-2 { grid-template-columns: 1fr; gap: 30px; }
+            .section-title { font-size: 2rem; }
+            .floating-action { bottom: 20px; right: 20px; }
+            .float-icon { width: 50px; height: 50px; font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Krishna Mehandi Art</h1>
+            <p>Your bridal henna deserves to be a masterpiece. We bring authentic, chemical-free, and highly detailed mehndi artistry directly to your doorstep across Chandigarh and Tricity.</p>
+            <a href="https://wa.me/919717934861" target="_blank" class="btn-gold">Book Your Consultation</a>
+        </div>
+    </header>
+
+    <!-- About & Trust Section (E-E-A-T) -->
+    <section class="section-padding container">
+        <div class="grid-2">
+            <div>
+                <h2 class="section-title">The Art & The Artist</h2>
+                <p>Welcome to Krishna Mehandi Art. Choosing the right artist for your wedding requires deep trust. We do not just draw patterns; we craft stories on your hands. With extensive experience catering to brides across Tricity, we focus on hygiene, precision, and authentic artistry.</p>
+                <p style="margin-top: 15px;">Your safety is our top priority. We exclusively use pure, organic Rajasthani henna leaves mixed with natural eucalyptus and clove oils. Our cones are freshly prepared at home, strictly avoiding toxic PPD chemicals. You can read independent botanical facts about safe, natural <a href="https://en.wikipedia.org/wiki/Lawsonia_inermis" target="_blank" rel="noopener noreferrer">Lawsonia inermis (Henna) on Wikipedia</a>.</p>
+            </div>
+            <div class="luxury-card text-center" style="background: var(--primary-dark); color: var(--white); border-top: 4px solid var(--accent-gold); border-bottom: none;">
+                <h3 style="color: var(--accent-gold);">Author Bio: Krishna</h3>
+                <p style="color: #ddd; font-weight: 300;">As the lead designer and founder, Krishna has spent over a decade perfecting traditional Indian, Arabic, and contemporary portrait mehndi styles. Known for extreme patience and a steady hand, Krishna ensures every bride feels relaxed and cherished during the application process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Transparency & Packages -->
+    <section class="section-padding" style="background-color: var(--white);">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Transparent Bridal Packages</h2>
+                <p style="max-width: 700px; margin: 0 auto 40px; color: var(--text-gray);">We value your time and budget. Here is our straightforward pricing model based on the intricacy and coverage of the design.</p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="luxury-card">
+                    <h3>Traditional Bridal</h3>
+                    <p>Classic Indian motifs, mandalas, and intricate detailing.</p>
+                    <div class="price-tag">₹5,100 <span>/ Starts From</span></div>
+                    <ul class="icon-list">
+                        <li><i class="fa-solid fa-check"></i> Elbow-length arms</li>
+                        <li><i class="fa-solid fa-check"></i> Mid-calf legs</li>
+                        <li><i class="fa-solid fa-check"></i> Free Home Service</li>
+                    </ul>
+                </div>
+
+                <div class="luxury-card" style="border-top: 4px solid var(--primary-dark); transform: scale(1.05); position: relative; z-index: 1;">
+                    <h3 style="color: var(--primary-dark);">Portrait / Figure Bridal</h3>
+                    <p>Highly customized faces, skylines, and storytelling elements.</p>
+                    <div class="price-tag" style="color: var(--accent-gold);">₹8,100 <span>/ Starts From</span></div>
+                    <ul class="icon-list">
+                        <li><i class="fa-solid fa-check"></i> Bride & Groom Portraits</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Organic Cones</li>
+                        <li><i class="fa-solid fa-check"></i> Pre-wedding Consultation</li>
+                    </ul>
+                </div>
+
+                <div class="luxury-card">
+                    <h3>Engagement & Guest</h3>
+                    <p>Elegant, lighter designs for pre-wedding functions.</p>
+                    <div class="price-tag">₹2,100 <span>/ Bridal Starts</span></div>
+                    <ul class="icon-list">
+                        <li><i class="fa-solid fa-check"></i> Guest Mehndi: ₹150-₹250/hand</li>
+                        <li><i class="fa-solid fa-check"></i> Arabic & Indo-Western</li>
+                        <li><i class="fa-solid fa-check"></i> Team available for large groups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Helpful Content: Guidelines & Process -->
+    <section class="section-padding guidelines-bg">
+        <div class="container grid-2">
+            <div>
+                <h2 class="section-title">The Perfect Stain Guide</h2>
+                <p style="color: #ddd;">A rich, dark burgundy stain requires teamwork. Follow these essential guidelines to maximize the color of your organic henna.</p>
+                
+                <h3 style="margin-top: 30px; font-size: 1.4rem;">Before We Arrive</h3>
+                <ul class="icon-list">
+                    <li><i class="fa-solid fa-leaf"></i> Finish all waxing, manicures, and pedicures a day before.</li>
+                    <li><i class="fa-solid fa-leaf"></i> Wash hands thoroughly with soap to remove natural body oils.</li>
+                    <li><i class="fa-solid fa-leaf"></i> Do not apply any body lotion or moisturizer.</li>
+                </ul>
+
+                <h3 style="margin-top: 30px; font-size: 1.4rem;">Aftercare Instructions</h3>
+                <ul class="icon-list">
+                    <li><i class="fa-solid fa-droplet"></i> Keep the paste on for a minimum of 6 to 8 hours.</li>
+                    <li><i class="fa-solid fa-droplet"></i> Apply a sticky mixture of lemon juice and sugar to hold it in place.</li>
+                    <li><i class="fa-solid fa-droplet"></i> Warm your hands slightly over clove smoke (Loung ka sek).</li>
+                    <li><i class="fa-solid fa-droplet"></i> Scrape it off gently. Avoid water contact for the next 12 hours.</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1610030588673-a4c0fb3dfa2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Beautiful Bridal Mehndi Process" style="width: 100%; border-radius: 15px; border: 4px solid var(--accent-gold); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Micro-Locations & High DA Do-Follow Backlinks -->
+    <section class="section-padding container">
+        <div class="text-center">
+            <h2 class="section-title">Tricity & Destination Reach</h2>
+            <p style="max-width: 800px; margin: 0 auto;">We bring professional artistry right to your living room. We cover all sectors of Chandigarh, Panchkula, and Mohali with absolutely no hidden travel charges.</p>
+        </div>
+
+        <div class="locations-box">
+            <p>Planning a wedding across the hills or specific localities? Connect with us directly through our dedicated regional networks:</p>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Secure your booking with the top <a href="https://krishnamehandi.in/bridal-mehndi-artist-in-chandigarh/">bridal mehndi artist in Chandigarh</a>.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Hosting a mountain wedding? We serve as an exclusive <a href="https://krishnamehandi.in/mehndi-artist-in-solan/">mehndi artist in Solan</a> and a trusted <a href="https://krishnamehandi.in/mehndi-artist-in-kasauli/">mehndi artist in Kasauli</a>.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Residing near the foothills? Connect with the <a href="https://krishnamehandi.in/best-mehndi-artist-in-pinjor-panchkula-krishna-mehandi-art/">best mehndi artist in Pinjore</a> or hire the <a href="https://krishnamehandi.in/best-mehndi-artist-in-kalka-panchkula-krishna-mehandi-art/">best mehndi artist in Kalka</a>.</li>
+                <li><i class="fa-solid fa-location-dot"></i> For scenic resort events, we are highly rated as the <a href="https://krishnamehandi.in/best-mehndi-artist-in-morni-hills-panchkula/">best mehndi artist in Morni Hills</a>.</li>
+                <li><i class="fa-brands fa-instagram"></i> View our daily bridal updates and latest portfolios directly on Instagram: <a href="https://Instagram.com/krishna_mehandi_art_1" target="_blank">@krishna_mehandi_art_1</a>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 10 FAQs -->
+    <section class="section-padding" style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title text-center" style="display: block;">Frequently Asked Questions</h2>
+            
+            <div class="faq-wrapper">
+                <details>
+                    <summary>Do you charge travel fees within Tricity?</summary>
+                    <div class="faq-content">No. We provide free home service across all sectors of Chandigarh, Panchkula, and Mohali. You only pay for the mehndi design.</div>
+                </details>
+                <details>
+                    <summary>Are your cones safe for sensitive skin?</summary>
+                    <div class="faq-content">Yes. We strictly use 100% natural Rajasthani henna, water, and essential oils like eucalyptus. We guarantee a chemical-free experience.</div>
+                </details>
+                <details>
+                    <summary>How long does a bridal design take?</summary>
+                    <div class="faq-content">Depending on the complexity, a full bridal package takes roughly 4 to 6 hours. Portrait designs may take slightly longer due to the required precision.</div>
+                </details>
+                <details>
+                    <summary>When should I book your services?</summary>
+                    <div class="faq-content">For peak wedding seasons (October to February), we highly advise booking 2 to 3 months in advance to secure your preferred date.</div>
+                </details>
+                <details>
+                    <summary>Can I customize my design or show a reference photo?</summary>
+                    <div class="faq-content">Absolutely. We encourage brides to share Pinterest or Instagram references. We can recreate them or combine elements to craft a unique design.</div>
+                </details>
+                <details>
+                    <summary>How do I secure my booking?</summary>
+                    <div class="faq-content">We require a nominal advance payment to confirm the date. The remaining balance is settled on the day the service is provided.</div>
+                </details>
+                <details>
+                    <summary>Do you bring a team for family members and guests?</summary>
+                    <div class="faq-content">Yes. If you have a large gathering, please inform us in advance. We will arrange skilled associate artists to ensure all your guests are attended to quickly.</div>
+                </details>
+                <details>
+                    <summary>What is the best time to apply bridal henna?</summary>
+                    <div class="faq-content">We recommend applying it 2 days before your wedding day. Natural henna takes about 48 hours to oxidize and reach its peak, darkest color.</div>
+                </details>
+                <details>
+                    <summary>Do you cater to festivals and fasts?</summary>
+                    <div class="faq-content">Yes, we take bookings for Karwa Chauth, Teej, and Diwali. Since these are high-demand single days, early booking is mandatory.</div>
+                </details>
+                <details>
+                    <summary>Can you hide the groom's name in the design?</summary>
+                    <div class="faq-content">Of course! Hiding the groom's name is a cherished tradition. We can hide it subtly within the floral motifs or prominently as part of a custom quote.</div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Contact Icons -->
+    <div class="floating-action">
+        <a href="https://wa.me/919717934861?text=Hello%20Krishna%20Mehandi%20Art,%20I%20am%20looking%20for%20bridal%20mehndi%20services." target="_blank" class="float-icon whatsapp-icon" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919717934861" class="float-icon call-icon" title="Call Us Directly">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h2>Ready to Secure Your Date?</h2>
+            <p style="font-size: 1.2rem; margin: 15px 0; color: var(--accent-light-gold);">Call or WhatsApp directly: <strong>+91 97179 34861</strong></p>
+            <p style="font-weight: 300; color: #ccc;">Exclusive organic henna services for Chandigarh, Mohali, Panchkula, and destination venues.</p>
+            
+            <div class="footer-credit">
+                Website Designing by Vishal Sahani | Instagram ID: <a href="https://instagram.com/vishalsahani" target="_blank">@vishalsahani</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
